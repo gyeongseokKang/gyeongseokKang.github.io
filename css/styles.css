@@ -10136,14 +10136,14 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/top_back.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
@@ -10163,8 +10163,9 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
