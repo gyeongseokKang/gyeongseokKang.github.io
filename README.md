@@ -1,5 +1,5 @@
 # gyeongseokKang.github.io
 
-# do to
+# ToDo
 1. new style 
 2. fill detail project page
