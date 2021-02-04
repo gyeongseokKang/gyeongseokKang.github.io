@@ -1,56 +1,127 @@
-/*!
-    * Start Bootstrap - Agency v6.0.1 (https://startbootstrap.com/template-overviews/agency)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
-    */
-    (function ($) {
-    "use strict"; // Start of use strict
-
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top - 72,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
+(function () {
+    // navbar
+    if ($('.nav-link').length > 0) {
+      $('.nav-link, .navbar-brand').on('click', function() {
+        $('.nav-link.active').removeClass('active');
+        $(this).addClass('active');
+      });
+    }
+  
+    // charts
+    var chart1 = document.getElementById('chart1');
+    var chart2 = document.getElementById('chart2');
+    var chart3 = document.getElementById('chart3');
+    var chart4 = document.getElementById('chart4');
+    var options = {
+      maintainAspectRatio: false,
+      tooltips: {
+        backgroundColor: '#040404',
+        bodyFontColor: '#fff',
+        xPadding: 15,
+        yPadding: 15,
+        displayColors: false,
+        caretPadding: 10,
+      },
+      legend: {
+        display: false
+      },
+      cutoutPercentage: 60
+    }
+    var borderColor = 'transparent';
+    var backgroundColor = ['#9a8ce3', '#3ac3c9', '#ffce03', '#ffa71c'];
+    var hoverBackgroundColor = ['grey', 'grey', 'grey', 'grey'];
+    var hoverBorderColor = 'rgba(234, 236, 244, 1)';
+  
+    if (chart1) {
+      new Chart(chart1, {
+        type: 'doughnut',
+        options,
+        data: {
+          labels: ['JavaScript ES6', 'React', 'HTML5', 'CSS3'],
+          datasets: [{
+            data: [50, 40, 7, 3],
+            borderColor,
+            backgroundColor,
+            hoverBackgroundColor,
+            hoverBorderColor
+          }]
         }
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNav",
-        offset: 74,
-    });
-
-    // Collapse Navbar
-    var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
+      });
+    }
+  
+    if (chart2) {
+      new Chart(chart2, {
+        type: 'doughnut',
+        options,
+        data: {
+          labels: ['Node.js', 'Express', 'Koa', 'Java', 'Spring'],
+          datasets: [{
+            data: [30, 20, 10, 20, 20],
+            borderColor,
+            backgroundColor,
+            hoverBackgroundColor,
+            hoverBorderColor
+          }]
         }
-    };
-    // Collapse now if page is not at top
-    navbarCollapse();
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
-})(jQuery); // End of use strict
+      });
+    }
+  
+    if (chart3) {
+      new Chart(chart3, {
+        type: 'doughnut',
+        options,
+        data: {
+          labels: ['MongoDB', 'MySQL', 'PostgreSQL'],
+          datasets: [{
+            data: [40, 34, 27],
+            borderColor,
+            backgroundColor,
+            hoverBackgroundColor,
+            hoverBorderColor
+          }]
+        }
+      });
+    }
+  
+    if (chart4) {
+      new Chart(chart4, {
+        type: 'doughnut',
+        options,
+        data: {
+          labels: ['GitHub', 'Asana', 'Trello', 'Redmine', 'Adobe Xd'],
+          datasets: [{
+            data: [40, 15, 15, 20, 10],
+            borderColor,
+            backgroundColor,
+            hoverBackgroundColor,
+            hoverBorderColor
+          }]
+        }
+      });
+    }
+  
+    // carousel
+    if ($('.owl-carousel').length > 0) {
+      $('.owl-carousel').owlCarousel({
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        items: 1,
+        autoplay: false,
+        dots: true,
+        loop: true
+      });
+    }
+  
+    // dark mode
+    if ($('.btn-toggle').length > 0) {
+      function switchMode(status) {
+        $('link[media]').attr('media', status ? 'screen' : 'not screen');
+      }
+  
+      $('.btn-toggle').on('click', function() {
+        var useDarkMode = $(this).attr('data-use-dark-mode');
+        switchMode(useDarkMode === 'true');
+      });
+    }
+  })();
+  
