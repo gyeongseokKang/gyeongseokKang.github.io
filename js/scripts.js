@@ -7,7 +7,7 @@
       });
     }
   
-    // charts
+    // charts test
     var chart1 = document.getElementById('chart1');
     var chart2 = document.getElementById('chart2');
     var chart3 = document.getElementById('chart3');
