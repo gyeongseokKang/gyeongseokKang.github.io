@@ -7,30 +7,26 @@
       });
     }
   
-    // charts test
-    var chart1 = document.getElementById('chart1');
-    var chart2 = document.getElementById('chart2');
-    var chart3 = document.getElementById('chart3');
-    var chart4 = document.getElementById('chart4');
-    var options = {
-      maintainAspectRatio: false,
-      tooltips: {
-        backgroundColor: '#040404',
-        bodyFontColor: '#fff',
-        xPadding: 15,
-        yPadding: 15,
-        displayColors: false,
-        caretPadding: 10,
-      },
-      legend: {
-        display: false
-      },
-      cutoutPercentage: 60
+    
+    let frondEndChart = document.querySelector('#chart_frondEnd')
+    let backEndChart = document.querySelector('#chart_backEnd')
+    let dataBaseChart = document.querySelector('#chart_database')
+    let utilChart = document.querySelector('#chart_util')
+
+    if(frondEndChart){
+      var data = [{
+        values: [50, 40, 7, 3],
+        labels: ['JavaScript ES6', 'React', 'HTML5', 'CSS3'],
+        type: 'pie'
+      }];
+      
+      var layout = {
+        height: 400,
+        width: 500
+      };
+      
+      Plotly.newPlot(frondEndChart, data, layout);
     }
-    var borderColor = 'transparent';
-    var backgroundColor = ['#9a8ce3', '#3ac3c9', '#ffce03', '#ffa71c'];
-    var hoverBackgroundColor = ['grey', 'grey', 'grey', 'grey'];
-    var hoverBorderColor = 'rgba(234, 236, 244, 1)';
   
     if (chart1) {
       new Chart(chart1, {
