@@ -21,13 +21,13 @@ body {
 
 /* 헤더 */
 header {
-  background-image: url(/assets/img/hero-light.png);
+  background-image: url(/assets/img/myface.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 header .container {
-  padding: 16rem 4rem;
+  padding: 8rem 4rem;
 }
 header .container h1 {
   letter-spacing: -0.05em;
