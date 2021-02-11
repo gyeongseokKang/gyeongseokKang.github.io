@@ -327,73 +327,13 @@ td .profile {
   color: rgb(140, 233, 0);
 }
 
-/* salary   */
-#salary .card-header {
-  height: 3rem;
+/*certificate*/
+#certificate .star-icon i {
+  color: rgb(140, 233, 0);
 }
-#salary .card-header h4 {
-  position: relative;
-  top: 25%;
-}
-#salary hr {
-  width: 70%;
-  margin: 0.8rem auto;
-  color: rgba(128, 128, 128, 0.711);
-}
-#salary .ribbon {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  position: absolute;
-}
-#salary .ribbon::before,
-#salary .ribbon::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  display: block;
-  border: 5px solid #2f3e75;
-}
-#salary .ribbon span {
-  position: absolute;
-  display: block;
-  width: 225px;
-  padding: 15px 0;
-  background-color: #5a7dfa;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  text-align: center;
-}
-#salary .ribbon-bottom-right {
-  bottom: -10px;
-  right: -10px;
-}
-#salary .ribbon-bottom-right::before,
-#salary .ribbon-bottom-right::after {
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-}
-#salary .ribbon-bottom-right::before {
-  bottom: 0;
-  left: 0;
-}
-#salary .ribbon-bottom-right::after {
-  top: 0;
-  right: 0;
-}
-#salary .ribbon-bottom-right span {
-  left: -25px;
-  bottom: 30px;
-  transform: rotate(-45deg);
-}
-#salary .check {
-  color: limegreen;
-}
-#salary .no {
-  color: orangered;
+#certificate table tbody td i {
+  font-size: 0.7rem;
+  letter-spacing: -2.4px;
 }
 
 /* Contact */
