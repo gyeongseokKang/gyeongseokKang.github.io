@@ -290,7 +290,8 @@ table tbody td i:hover {
 
 /* table - awards  */
 #awards img {
-  border-radius: 50%;
+  border-radius: 5%;
+  margin-bottom: 5px;
 }
 td .profile {
   padding-top: 0.5rem;
