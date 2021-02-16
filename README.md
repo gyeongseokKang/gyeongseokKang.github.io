@@ -1,9 +1,11 @@
-# gyeongseokKang.github.io
+# Go to my PP site
+* https://gyeongseokkang.github.io/
 
 # ToDo
-* new style (기존 라인과 같은 스타일 제거) - complete
-* fill detail project page
-* https://brunch.co.kr/@hee072794/132?fbclid=IwAR0rsktJUO9qo27mbUW5FIQN3KmiAx8DbELuihK5Lk7Zk7G9BjUoHMFUc3U 따라가기!!
+* Dark mode Support
+* I18n Support( English, Korean )
+* migration to React, TypeScript ( with Next.js )
 
 # Done 
-* new style (기존 라인과 같은 스타일 제거) - complete
+* version 2 update ( 2021.02.16 )
+* version 1 update
