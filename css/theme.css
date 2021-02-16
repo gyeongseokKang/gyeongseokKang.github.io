@@ -21,22 +21,16 @@ body {
 
 /* 헤더 */
 header {
-  background-image: url(/assets/img/myface.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #f0dcc7b0;
 }
 header .container {
-  padding: 8rem 4rem;
+  padding: 6rem 4rem;
 }
 header .container h1 {
   letter-spacing: -0.05em;
   font-size: 3.25rem;
   font-weight: 100;
-  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
-    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   color: #ffffff;
 }
 
@@ -475,12 +469,7 @@ footer {
   color: rgb(255, 255, 255);
 }
 .btn-3 {
-  background-image: linear-gradient(
-    to right,
-    #84fab0 0%,
-    #8fd3f4 51%,
-    #84fab0 100%
-  );
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
 }
 
 .backimg {
@@ -488,10 +477,5 @@ footer {
 }
 
 .btn-google {
-  background-image: linear-gradient(
-    to right,
-    #84fab0 0%,
-    #8fd3f4 51%,
-    #84fab0 100%
-  );
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
 }
