@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="gyeongseokKang" />
+    <meta name="keywords" content="frontEnd, portfolio, developer" />
+    <meta name="description" content="Kang's Portfolio" />
+    <title>Kang's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <link rel="stylesheet" href="/css/theme-dark.css" media="(prefers-color-scheme: dark)" />
+  </head>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="author" content="gyeongseokKang" />
-	<meta name="keywords" content="frontEnd, portfolio, developer" />
-	<meta name="description" content="Kang's Portfolio" />
-	<title>Kang's Portfolio</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;800&display=swap" />
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-	<link rel="stylesheet" href="/css/style.css" />
-	<link rel="stylesheet" href="/css/theme.css" />
-	<link rel="stylesheet" href="/css/theme-dark.css" media="(prefers-color-scheme: dark)" />
-</head>
-
-<body>
-
-	<!-- Header 시작 -->
-	<header>
-		<div>
-			<div class="container" style="display: flex">
-				<div style="flex: 2">
-					<h1>FrondEnd</h1>
-					<h1>개발자 <strong>강경석</strong> 입니다</h1>
-				</div>
-				<div style="flex: 1">
-					<img style="
+  <body>
+    <!-- Header 시작 -->
+    <header>
+      <div>
+        <div class="container" style="display: flex">
+          <div style="flex: 2">
+            <h1>FrondEnd</h1>
+            <h1>개발자 <strong>강경석</strong> 입니다</h1>
+          </div>
+          <div style="flex: 1">
+            <img
+              style="
                 width: 300px;
                 height: 300px;
                 border: 3px solid;
@@ -41,43 +37,51 @@
                 -moz-border-radius: 7px;
                 -khtml-border-radius: 7px;
                 -webkit-border-radius: 50px;
-              " src="/assets/img/myface.jpg" />
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- Header 끝 -->
-	<!-- Navbar 시작 -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container-fluid text-uppercase">
-			<a class="navbar-brand" href="#">KANG GYEONG SEOK</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse sticky-fixed" id="navbarNav">
-				<ul class="navbar-nav me-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#summary">Summary</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#project">Project</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#awards">Awards</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#stacks">Stacks</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#certificate">Certificate</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-				<form class="d-flex">
-					<!--
+              "
+              src="/assets/img/myface.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header 끝 -->
+    <!-- Navbar 시작 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid text-uppercase">
+        <a class="navbar-brand" href="#">KANG GYEONG SEOK</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse sticky-fixed" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stacks">Stacks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate">Certificate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <!--
             <div class="btn-box">
               <a
                 href="https://restpack.io/html2pdf/save-as-pdf"
@@ -87,10 +91,8 @@
               >
             </div>
             -->
-					<button type="button" data-use-dark-mode="true" class="btn btn-dark btn-toggle me-2">
-						Dark
-					</button>
-					<!--
+            <button type="button" data-use-dark-mode="true" class="btn btn-dark btn-toggle me-2">Dark</button>
+            <!--
             <button
               type="button"
               data-use-dark-mode="false"
@@ -99,211 +101,60 @@
               White
             </button>
             -->
-				</form>
-			</div>
-		</div>
-	</nav>
-	<!-- Navbar 끝 -->
-	<!-- Main 시작 -->
-	<main>
-		<!-- Summary 시작 -->
-		<section class="container pt mt" id="summary">
-			<div class="row">
-				<div class="col-lg-8 mx-auto text-center">
-					<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-						Summary
-					</h2>
-					<p class="color-basic fonsiz-xl fonwei-kr-xs letsp-xs ws-sm mt-4">
-						안녕하세요.
-						<span class="fonwei-en-xl letsp-md">FrontEnd</span> 개발자
-						강경석입니다. 저는 19년도부터 일을 시작한
-						<span class="fonwei-en-xl letsp-md">3년차</span>입니다. <br />내
-						손으로 무언갈 만들어내는 프로그래밍의 매력을 느껴
-						<span class="fonwei-en-xl letsp-md">의미있는 것</span>을 만들고자
-						나아가는 사람입니다. <br />코드 리펙토링을 좋아하고 좋은 디자인
-						패턴을 추구하는 아직은 나아가야할 길이 더 많은 개발자이지만,
-						<br />함께 일하고 싶은 동료, 신뢰받는 동료가 되기 위해 오늘도
-						정진하고 있습니다.
-					</p>
-				</div>
-			</div>
-		</section>
-		<!-- Summary 끝 -->
-		<!-- Project 시작 -->
-		<section class="container pt mt" id="project">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Project
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				저는 깔끔한 코드, 읽기 쉬운 디자인패턴을 마음속에 담고 프로젝트를
-				끝까지 하기 위해 노력합니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table borderless table-hover align-middle">
-							<thead class="border-0 borderless" border="0">
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>프로젝트</th>
-									<th>소개</th>
-									<th>개발 참여도</th>
-									<th>추가 정보</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title" scope="col">
-										데이터 시각화 서비스 : HyperData
-									</th>
-									<td>
-										<div>
-											[티맥스] 시각화 대시보드 : 오픈소스 라이브러리를 이용한
-											시각화 대시보드
-										</div>
-										<div>
-											#HyperData #Plotly.js #Tabulator.js #SunEditor.js
-											#InterAction.js
-										</div>
-										<div>
-											<span class="badge bg-inprogress">In Progress</span>
-											<span class="badge bg-grey">React</span>
-											<span class="badge bg-grey">Mobx</span>
-											<span class="badge bg-grey">TypeScript</span>
-											<span class="badge bg-grey">Node.js</span>
-											<span class="badge bg-grey">Plotly.js</span>
-											<span class="badge bg-grey">Babel</span>
-										</div>
-									</td>
-									<td class="text-center">
-										<div class="">( 20/02~ current)</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated"
-												style="width: 100%">
-												<span class="progress-desc">개발중</span>
-											</div>
-										</div>
-										<div class="progress-desc">프론트 앤드 시각화파트</div>
-									</td>
-								</tr>
-								<tr>
-									<th class="table-title" scope="col">
-										통합 모빌리티 서비스 : 카찹
-									</th>
-									<td>
-										<div>
-											[카찹] 통합 모빌리티 서비스 : 다양하게 분산되어 있는
-											모빌리티 서비스를 한 곳에서 통합 검색->결제->반납의
-											서비스를 제공합니다.
-										</div>
-										<div>
-											#통합모빌리티 #공유서비스 #대중교통 #가격 비교
-											#지도서비스 #스타트업 #Co-founder
-										</div>
-										<div>
-											<span class="badge bg-done">Done</span>
-											<span class="badge bg-grey">Android</span>
-											<span class="badge bg-grey">Java</span>
-											<span class="badge bg-grey">REST API</span>
-											<span class="badge bg-grey">GOOGLE MAP</span>
-											<span class="badge bg-grey">SOCAIAL LOGIN</span>
-											<span class="badge bg-grey">FIREBASE</span>
-										</div>
-									</td>
-									<td class="text-center">
-										<div class="">( 18/12~ 20/02)</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped bg-info" style="width: 100%">
-												<span class="progress-desc">개발 완료</span>
-											</div>
-										</div>
-										<div class="progress-desc">안드로이드 앱 개발</div>
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal" data-bs-target="#Modal1">
-											<i class="bi bi-file-earmark-slides"></i>
-											<div class="modal fade" id="Modal1" tabindex="-1"
-												aria-labelledby="Modal1Label" aria-hidden="true">
-												<div class="modal-dialog">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="Modal1Label">
-																통합 모빌리티 서비스 : 카찹
-															</h5>
-															<button type="button" class="btn-close"
-																data-bs-dismiss="modal" aria-label="Close"></button>
-														</div>
-														<div class="modal-body">
-															<video muted autoplay loop width="100%" height="100%">
-																<source src="assets/video/carchap_service.mp4"
-																	type="video/mp4" />
-																<strong>Your browser does not support the video
-																	tag.</strong>
-															</video>
-															<p class="modal-desc">
-																<br />서비스 개요 : 파편화된 모빌리티 서비스를
-																한 곳에서 <br />사용 언어 : 자바, 코틀린
-																<br />사용 라이브러리 : Google Map. Firebase,
-																Social Login, etc.. <br />개발 기여도 :
-																안드로이드 앱 개발(단독) <br />개발 기간 : 1년
-																6개월 <br />앱 링크 :
-																<a href="https://play.google.com/store/apps/details?id=org.techtown.carchap_v11&hl=ko&gl=US"
-																	class="btn btn-google" target="_blank">Google Play
-																	Store</a>
-																<a href="https://apps.apple.com/us/app/%EC%B9%B4%EC%B0%B9-%EC%9D%B4%EB%8F%99%EC%88%98%EB%8B%A8-%ED%86%B5%ED%95%A9-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1506198003"
-																	class="btn btn-google" target="_blank">App Store</a>
-															</p>
-														</div>
-														<div class="modal-footer">
-															<button type="button" class="btn btn-secondary"
-																data-bs-dismiss="modal">
-																Close
-															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</span>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
-						프로젝트들은 최근 개발한 순으로 정렬되어 있습니다
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="container pt" id="toyProject">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Toy Project
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				업무 외에 배우고 싶은 기술, 언어를 사용해보며 나아가고 있습니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table borderless table-hover align-middle">
-							<thead class="border-0 borderless">
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>프로젝트</th>
-									<th>소개</th>
-									<th>개발 참여도</th>
-									<th>추가 정보</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title" scope="col">ToDo</th>
-									<td>
-										<div>
-											ToDo : Meaningful Project
-										</div>
-										<div>
-											#Latest #OpenSource #Toy #Complete
-										</div>
-										<!--<div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar 끝 -->
+    <!-- Main 시작 -->
+    <main>
+      <!-- Summary 시작 -->
+      <section class="container pt mt" id="summary">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Summary</h2>
+            <p class="color-basic fonsiz-xl fonwei-kr-xs letsp-xs ws-sm mt-4">
+              안녕하세요.
+              <span class="fonwei-en-xl letsp-md">FrontEnd</span> 개발자 강경석입니다. 저는 19년도부터 일을 시작한
+              <span class="fonwei-en-xl letsp-md">3년차</span>
+              개발자입니다.
+              <br />
+              제 상상과 생각들이 자연스럽고 탄탄하게 녹아있는 프로젝트를 만들고 싶은 개발자입니다.
+              <br />
+              코드 리펙토링을 좋아하고 적절한 디자인패턴을 끊임없고 갈구하는 완성되지 않은 개발자이지만,
+              <br />
+              <span class="fonwei-en-xl letsp-md">함께 일하고 싶은 동료</span>, <span class="fonwei-en-xl letsp-md">신뢰받는 동료</span>,
+              <span class="fonwei-en-xl letsp-md">완성된 개발자</span>가 되기 위해 오늘도 정진하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Summary 끝 -->
+      <!-- Project 시작 -->
+      <section class="container pt mt" id="project">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Project</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          저는 깔끔한 코드, 읽기 쉬운 디자인패턴을 마음속에 담고 프로젝트를 끝까지 하기 위해 노력합니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table borderless table-hover align-middle">
+                <thead class="border-0 borderless">
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>프로젝트</th>
+                    <th>소개</th>
+                    <th>개발 참여도</th>
+                    <th>추가 정보</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-title" scope="col">데이터 시각화 서비스 : HyperData</th>
+                    <td>
+                      <div>[티맥스] 시각화 대시보드 : 오픈소스 라이브러리를 이용한 시각화 대시보드</div>
+                      <div>#HyperData #Plotly.js #Tabulator.js #SunEditor.js #InterAction.js</div>
+                      <div>
                         <span class="badge bg-inprogress">In Progress</span>
                         <span class="badge bg-grey">React</span>
                         <span class="badge bg-grey">Mobx</span>
@@ -311,872 +162,934 @@
                         <span class="badge bg-grey">Node.js</span>
                         <span class="badge bg-grey">Plotly.js</span>
                         <span class="badge bg-grey">Babel</span>
-                      </div> -->
-									</td>
-									<td class="text-center">
-										<div class="">( now ~ )</div>
-										<div class="progress">
-											<div class="progress-bar progress-bar-striped progress-bar-animated"
-												style="width: 100%">
-												<span class="progress-desc">개발중</span>
-											</div>
-										</div>
-										<div class="progress-desc">Only myself</div>
-									</td>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="">( 20/02~ current)</div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">
+                          <span class="progress-desc">개발중</span>
+                        </div>
+                      </div>
+                      <div class="progress-desc">프론트 앤드 시각화파트</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-title" scope="col">통합 모빌리티 서비스 : 카찹</th>
+                    <td>
+                      <div>
+                        [카찹] 통합 모빌리티 서비스 : 다양하게 분산되어 있는 모빌리티 서비스를 한 곳에서 통합 검색->결제->반납의 서비스를 제공합니다.
+                      </div>
+                      <div>#통합모빌리티 #공유서비스 #대중교통 #가격 비교 #지도서비스 #스타트업 #Co-founder</div>
+                      <div>
+                        <span class="badge bg-done">Done</span>
+                        <span class="badge bg-grey">Android</span>
+                        <span class="badge bg-grey">Java</span>
+                        <span class="badge bg-grey">REST API</span>
+                        <span class="badge bg-grey">GOOGLE MAP</span>
+                        <span class="badge bg-grey">SOCAIAL LOGIN</span>
+                        <span class="badge bg-grey">FIREBASE</span>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="">( 18/12~ 20/02)</div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" style="width: 100%">
+                          <span class="progress-desc">개발 완료</span>
+                        </div>
+                      </div>
+                      <div class="progress-desc">안드로이드 앱 개발</div>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#Modal1">
+                        <i class="bi bi-file-earmark-slides"></i>
+                        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="Modal1Label">통합 모빌리티 서비스 : 카찹</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <video muted autoplay controls loop width="100%" height="100%">
+                                  <source src="assets/video/carchap_service.mp4" type="video/mp4" />
+                                  <strong>Your browser does not support the video tag.</strong>
+                                </video>
+                                <p class="modal-desc">
+                                  <br />서비스 개요 : 파편화된 모빌리티 서비스를 한 곳에서 <br />사용 언어 : 자바, 코틀린 <br />사용 라이브러리 :
+                                  Google Map. Firebase, Social Login, etc.. <br />개발 기여도 : 안드로이드 앱 개발(단독) <br />개발 기간 : 1년 6개월
+                                  <br />앱 링크 :
+                                  <a
+                                    href="https://play.google.com/store/apps/details?id=org.techtown.carchap_v11&hl=ko&gl=US"
+                                    class="btn btn-google"
+                                    target="_blank"
+                                    >Google Play Store</a
+                                  >
+                                  <a
+                                    href="https://apps.apple.com/us/app/%EC%B9%B4%EC%B0%B9-%EC%9D%B4%EB%8F%99%EC%88%98%EB%8B%A8-%ED%86%B5%ED%95%A9-%ED%94%8C%EB%9E%AB%ED%8F%BC/id1506198003"
+                                    class="btn btn-google"
+                                    target="_blank"
+                                    >App Store</a
+                                  >
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
+              프로젝트들은 최근 개발한 순으로 정렬되어 있습니다
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container pt" id="toyProject">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Toy Project</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          업무 외에 배우고 싶은 기술, 언어를 사용해보며 나아가고 있습니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table borderless table-hover align-middle">
+                <thead class="border-0 borderless">
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>프로젝트</th>
+                    <th>소개</th>
+                    <th>개발 참여도</th>
+                    <th>추가 정보</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-title" scope="col">Dr.폴리오</th>
+                    <td>
+                      <div>금용공학 모델 + AI를 이용한 최적의 포트폴리오 생성, 추천 서비스</div>
+                      <div>#FinTech #Toy #Finance #AI</div>
+                      <div>
+                        <span class="badge bg-inprogress">In Progress</span>
+                        <span class="badge bg-grey">React</span>
+                        <span class="badge bg-grey">TypeScript</span>
+                        <span class="badge bg-grey">Material UI</span>
+                        <span class="badge bg-grey">Plotly.js</span>
+                        <span class="badge bg-grey">Flask</span>
+                        <span class="badge bg-grey">Python</span>
+                        <span class="badge bg-grey">Webpack</span>
+                        <span class="badge bg-grey">Babel</span>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div class="">( now ~ )</div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">
+                          <span class="progress-desc">개발중</span>
+                        </div>
+                      </div>
+                      <div class="progress-desc">프론트앤드 전담</div>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#Modal2">
+                        <i class="bi bi-file-earmark-slides"></i>
+                        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="Modal2Label">Dr.폴리오</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <video muted autoplay controls loop width="100%" height="100%">
+                                  <source src="assets/video/dr.folio_service.mp4" type="video/mp4" />
+                                  <strong>Your browser does not support the video tag.</strong>
+                                </video>
+                                <p class="modal-desc">
+                                  <br />서비스 개요 : 금융공학 모델을 바탕으로 최적의 포트플리오를 제공 <br />사용 언어 : 타입스크립트, 파이썬<br />개발
+                                  기여도 : 프론트앤드 개발(단독) <br />개발 기간 : 3개월 <br />소스 코드 :
+                                  <a href="https://github.com/gyeongseokKang/dividend" class="btn btn-google" target="_blank">GitHub</a>
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
+              프로젝트들은 최근 개발한 순으로 정렬되어 있습니다
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 연차별 업무 진행-->
+      <section class="container pt" id="annualizedWork">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Annualized work</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          연차별로 중점적으로 했던 업무를 한줄로 간략히 정리해보았습니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table borderless table-hover align-middle">
+                <thead class="border-0 borderless">
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>연차(Annual)</th>
+                    <th>소개(Explanation)</th>
+                    <th>중점 기술(Main Stack)</th>
+                    <th>추가 정보(Extra)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-title" scope="col">2년차</th>
+                    <td>
+                      <div>Web App 마이크레이션</div>
+                    </td>
+                    <td class="text-center">
+                      <div>
+                        <img src="https://img.shields.io/badge/Javscript--grey?logo=javascript" />
+                        <img src="https://img.shields.io/badge/Typscript--grey?logo=typescript" />
+                        <img src="https://img.shields.io/badge/react--grey?logo=react" />
+                        <img src="https://img.shields.io/badge/mobx--grey?logo=mobx" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-title" scope="col">1년차</th>
+                    <td>
+                      <div>Web App(BI툴의 시각화 담당) 개발</div>
+                    </td>
+                    <td class="text-center">
+                      <div>
+                        <img src="https://img.shields.io/badge/Javscript--grey?logo=javascript" />
+                        <img src="https://img.shields.io/badge/Plotly.js--grey?logo=plotly" />
+                        <img src="https://img.shields.io/badge/SunEditor--grey?logo=sunEditor" />
+                        <img src="https://img.shields.io/badge/Tabulator--grey?logo=tabulator" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-title" scope="col">0년차</th>
+                    <td>
+                      <div>모빌리티 서비스 앱 개발</div>
+                    </td>
+                    <td class="text-center">
+                      <div>
+                        <img src="https://img.shields.io/badge/Android--grey?logo=android" />
+                        <img src="https://img.shields.io/badge/Firebase--grey?logo=firebase" />
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <div>스타트업, 창업</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">가장 최근 순으로 정렬되어 있습니다</div>
+          </div>
+        </div>
+      </section>
+      <!-- Project 끝 -->
+      <!-- Awards 시작 -->
+      <section class="container pt mt" id="awards">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Awards</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          다양한 사람들과 협업을 통해서 함께 공동의 목표를 성취해 나가는 것에 관심이 많습니다. 실패를 겁내지 않고 도전하는 것이 행복합니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead>
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>대회</th>
+                    <th>세부 사항</th>
+                    <th>수상</th>
+                    <th>증빙자료</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-title" scope="col">
+                      2021<br />
+                      우리은행 온택트 공모전 <br />
+                    </th>
+                    <td>
+                      <div>[Dr.폴리오] 금용공학 모델 + AI를 이용한 최적의 포트폴리오 생성, 추천 서비스</div>
+                      <div>
+                        <span class="badge bg-grey">React</span>
+                        <span class="badge bg-grey">TypeScript</span>
+                        <span class="badge bg-grey">Material UI</span>
+                        <span class="badge bg-grey">Plotly.js</span>
+                        <span class="badge bg-grey">Flask</span>
+                        <span class="badge bg-grey">Python</span>
+                        <span class="badge bg-grey">Webpack</span>
+                        <span class="badge bg-grey">Babel</span>
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">우수상<br /></td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#Award_2021_1">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="Award_2021_1" tabindex="-1" aria-labelledby="Award_2021_1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="Award_2021_1Label">시상식 증빙 자료</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img src="assets/img/award/wooribangAward.jpeg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <p class="modal-desc">
+                                사이드 프로젝트 동기부여를 위해 기한을 정하고 공모전에 도전하였습니다.<br />
+                                전체 70여개의 팀 중에 3등을 하였고, 프로젝트을 가치를 인정받고 개발, 고도화 중입니다
+                              </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
 
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
-						프로젝트들은 최근 개발한 순으로 정렬되어 있습니다
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- 연차별 업무 진행-->
-		<section class="container pt" id="annualizedWork">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Annualized work
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				연차별로 중점적으로 했던 업무를 한줄로 간략히 정리해보았습니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table borderless table-hover align-middle">
-							<thead class="border-0 borderless">
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>연차(Annual)</th>
-									<th>소개(Explanation)</th>
-									<th>중점 기술(Main Stack)</th>
-									<th>추가 정보(Extra)</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title" scope="col">2년차</th>
-									<td>
-										<div>
-											Web App 마이크레이션
-										</div>
-									</td>
-									<td class="text-center">
-										<div>
-											<img src="https://img.shields.io/badge/Javscript--grey?logo=javascript" />
-											<img src="https://img.shields.io/badge/Typscript--grey?logo=typescript">
-											<img src="https://img.shields.io/badge/react--grey?logo=react">
-											<img src="https://img.shields.io/badge/mobx--grey?logo=mobx">
+                  <tr>
+                    <th class="table-title" scope="col">
+                      2019<br />
+                      청년 스타트업 어워즈 <br />
+                      경기도 대학생 융합 창업지원 공모전 <br />
+                      흑석캠퍼스타운 창업경진대회 <br />
+                      스마트시티즌 챌린지 <br />
+                      서울과기대 창업아이디어 경진대회 <br />
+                    </th>
+                    <td>
+                      <div>[카찹] 통합 모빌리티 서비스</div>
+                      <div>
+                        <span class="badge bg-grey">Android</span>
+                        <span class="badge bg-grey">Java</span>
+                        <span class="badge bg-grey">Kotlin</span>
+                        <span class="badge bg-grey">Firebase</span>
+                        <span class="badge bg-grey">Php</span>
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
+                      대상<br />
+                      S등급(대상)<br />
+                      대상<br />
+                      촤우수상<br />
+                      은상<br />
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#myAwardModal1">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="myAwardModal1" tabindex="-1" aria-labelledby="myAwardModal1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="myAwardModal1Label">시상식 증빙 자료</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img src="assets/img/award/startupAward.jpg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <img src="assets/img/award/gyeonggiAward.jpeg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <img src="assets/img/award/campusTownAward.jpg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <img src="assets/img/award/smartCitizenAward.jpeg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <img src="assets/img/award/STU_Award.jpg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <p class="modal-desc">
+                                프로젝트를 검증받기 위해 다양한 경진대회, 공모전에 참가하였고 총 9개의 상을 받았습니다.<br />
+                                이후 팀원들과 창업을 하게 되었고, 해당 대회를 통해 맺게된 인연을 통해 초기 투자를 받을 수 있었습니다.
+                              </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
 
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th class="table-title" scope="col">1년차</th>
-									<td>
-										<div>
-											Web App(BI툴의 시각화 담당) 개발
-										</div>
-									</td>
-									<td class="text-center">
-										<div>
-											<img src="https://img.shields.io/badge/Javscript--grey?logo=javascript" />
-											<img src="https://img.shields.io/badge/Plotly.js--grey?logo=plotly" />
-											<img src="https://img.shields.io/badge/SunEditor--grey?logo=sunEditor" />
-											<img src="https://img.shields.io/badge/Tabulator--grey?logo=tabulator" />
+                  <tr>
+                    <th class="table-title" scope="col">한국통신학회 추계종합학술발표회</th>
+                    <td>
+                      <div>[UC-Lab] GAN모델과 DNN모델을 활용한 Anomaly Detection에 관한 연구</div>
+                      <div>
+                        <span class="badge bg-grey">Machine Learning</span>
+                        <span class="badge bg-grey">GAN</span>
+                        <span class="badge bg-grey">DNN</span>
+                        <span class="badge bg-grey">Notebook(ipynb)</span>
+                        <span class="badge bg-grey">Python</span>
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">우수논문상</td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#myAwardModal2">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="myAwardModal2" tabindex="-1" aria-labelledby="myAwardModal2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="myAwardModal2Label">시상식 증빙 자료</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img src="assets/img/award/poster.jpg" class="modal-img" alt="" style="width: 80%; height: 80%" />
+                              <p class="modal-desc">
+                                시큐레이어(보안솔루션기업)에서 인턴직을 수행하며 배웠던 경험을 <br />
+                                학부연구생 활동을 통해 학술대회에 지원하였습니다. <br />
+                                머신러닝(GAN)를 활용한 이상탐지(Anomaly Detection)에 대해 주제로 우수논문상을 수상하였습니다.
+                              </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
+              대회 참여 및 수상 실적은 최근 순으로 정렬되어 있습니다
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Awards 끝-->
+      <!-- Stack 시작-->
+      <section class="container pt mt mb-5" id="stacks">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Stacks</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          T자형 지식을 추구합니다. 다만 지금은 수직, 수평적인 지식을 둘다 키워야하는 주니어로써 다양한 기술, 언어를 습득해 할 수 있는 경계선을 더 넓혀
+          나가고자 합니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead>
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>기술 구분</th>
+                    <th>로고</th>
+                    <th>활용 수준</th>
+                    <th>평가</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">JavaScript</th>
+                    <td>
+                      <a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" target="_blank">
+                        <img src="/assets/img/stack/js.png" alt="JavaScript Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      <span class="ls-0">JavaScript, ECMAScript, Webpack</span>
+                      과 Babel등을 위주로 개발하며 모듈을 극대화한 자바스크립트 프로그래밍을 추구합니다.<br />
+                      최신 문법인 <span class="ls-0">ES6</span>부터 핵심이 되는 자바스크립트 코어까지 가장 깊게 공부하고 사용하고 있는 언어이기도
+                      합니다.
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">TypeScript</th>
+                    <td>
+                      <a href="https://ko.wikipedia.org/wiki/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" target="_blank">
+                        <img src="/assets/img/stack/ts.png" alt="TypeScript Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      타입스크립트의 견고한 정적 분석을 통해 개발 유지보수성을 향상시키고 사이드이펙트가 없는 프로그램을 만들기 위해 도입하고 사용하고
+                      있습니다. 자바스크립트의 슈퍼셋언어로서 다양한 기능과 장기적인 편의가 있어 자바스크립트와 함께 꾸준히 배워가고 있습니다.
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">Node.js</th>
+                    <td>
+                      <a href="https://ko.wikipedia.org/wiki/Node.js" target="_blank">
+                        <img src="/assets/img/stack/nodejs.svg" alt="Node.js Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      <span class="ls-0">Node.js</span>로 <span class="ls-0">Express, Koa</span>등 웹 개발 프레임워크를 구축할 수 있으며,
+                      <span class="ls-0">React</span>와 <span class="ls-0">MERN Stack</span> 방식으로 조합하여 개발할 수 있습니다<br />
+                      <span class="ls-0">Handlebars, Liquid</span>와 같은 <span class="ls-0">Template Engine</span>을
+                      <span class="ls-0">View</span> 형태로 제공하여 구축하거나 서버 로깅 등을 할 수 있습니다
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">React</th>
+                    <td>
+                      <a
+                        href="https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9B%B9_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)"
+                        target="_blank"
+                      >
+                        <img src="/assets/img/stack/react.svg" alt="React Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      기본 레거시에서 React로 이식하는 작업으로 React를 접하고 현재에도 계속 사용중입니다. HOC부터 StyledComponent 등을 적절히
+                      조합하여 사용할 수 있으며 렌더링 이슈가 중요한 대용량 시각화 렌더링 부분을 담당하며 역량을 키워나가고 있습니다.
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">SQL</th>
+                    <td>
+                      <a href="https://ko.wikipedia.org/wiki/SQL" target="_blank">
+                        <img src="/assets/img/stack/sql.png" alt="SQL Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      <span class="ls-0">oracle, tibero SQL</span>를 적절하게 사용하고 튜닝할 수 있으며, 간단한 쿼리 작업을 능숙하게 수행할 수
+                      있습니다. 현재 틈틈히 계속 공부중이며 SQLD를 취득했고 SQLP를 위해 공부중입니다. 시각화에 필요한 데이터 쿼리를 적절하게 조합할 수
+                      있는 query Generater 모듈을 설계 및 구현하였으며 계속 업그레이드 중에 있습니다.
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="col" class="table-title letsp-md">Android</th>
+                    <td>
+                      <a href="https://koajs.com/" target="_blank">
+                        <img src="/assets/img/stack/android.png" alt="Android Logo" />
+                      </a>
+                    </td>
+                    <td>
+                      다양한 REST API, 비동기적인 서비스 연동에 경험이 있으며, GoogleMap를 기반으로 하는 어플리케이션을 초기 설계부터 실제 서비스까지
+                      전부 담당했습니다. MVVM 패턴으로 설계를 진행 할 수 있으며, 그 외 RxJava, Kotlin를 이용한 안드로이드 개발도 가능합니다.
+                    </td>
+                    <td>
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
+              5개의 별은 부끄럽게도 평생을 공부해도 가질수 있을까 의문입니다만, 쟁취해보려고 합니다.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="charts" class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card mb-3">
+              <div id="chart_frondEnd"></div>
+              <div class="card-body">
+                <div>
+                  <h4 class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">Front End</h4>
+                </div>
+                <div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
+                  <span class="ls-0">JavaScript</span>를 가장 많이 사용해 왔으며 가장 자신 있는 언어입니다. 특히 <span class="ls-0">React</span>에
+                  관심이 많습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card mb-3">
+              <div id="chart_backEnd"></div>
+              <div class="card-body">
+                <h4 class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">Back end</h4>
+                <div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
+                  <span class="ls-0">Node.js</span>를 가장 많이 사용하며 <span class="ls-0">Express.js, Koa </span>등의 프레임워크를 활용하고 있습니다
+                  <span class="ls-0">Deno</span>를 공부해보고 싶습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card mb-3">
+              <div id="chart_database"></div>
+              <div class="card-body">
+                <h4 class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">Data base</h4>
+                <div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
+                  <span class="ls-0">MongoDB</span>를 가장 좋아하며 <span class="ls-0">Mongoose</span>를 활용하고 있습니다. 물론
+                  <span class="ls-0">MySQL</span>도 사용하는 중이며 <span class="ls-0">GraphQL</span>에 관심이 많습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
+            <div class="card mb-3">
+              <div id="chart_util"></div>
+              <div class="card-body">
+                <h4 class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">Utilities</h4>
+                <div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
+                  <span class="ls-0">GraphQL, Asana, Trello, AdobeXd, GitHub, Redmine</span>
+                  등 사용하고 있습니다. 더 많이 알수록 효율은 더 높아진다고 믿습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stack 끝-->
+      <!-- certificate 시작-->
+      <section class="container pt mt" id="certificate">
+        <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Certificate</h2>
+        <div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
+          자격증이 실력의 척도가 될 수는 없습니다. 하지만 관심과 꾸준함에 대한 척도는 될 수 있다고 생각합니다.
+        </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead>
+                  <tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
+                    <th>자격명</th>
+                    <th>취득 이유</th>
+                    <th>활용도</th>
+                    <th>자격증</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table-title" scope="col">정보처리기사(산업기사)</th>
+                    <td>
+                      <div>
+                        대학교 생활의 마무리의 의미로 취득하였습니다. 개발자에게 있어 정보처리기사는 큰 업무적은 이점은 없습니다. <br />
+                        하지만 컴퓨터공학 전반을 아우르는 기초적인 지식을 얻을 수 있는 시험이었습니다.
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#certificateModel_1">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="certificateModel_1" tabindex="-1" aria-labelledby="certificateModel_1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="certificateModel_1Label">자격증</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img
+                                src="assets/img/certificate/InformationProcessingEngineer.png"
+                                class="modal-img"
+                                alt="정보처리기사 자격증"
+                                style="width: 80%; height: 80%"
+                              />
+                              <img
+                                src="assets/img/certificate/InformationProcessingIndustryEngineer.png"
+                                class="modal-img"
+                                alt="정보처리기사산업기사 자격증"
+                                style="width: 80%; height: 80%"
+                              />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-title" scope="col">정보기기운용기능사</th>
+                    <td>
+                      <div>
+                        군대에서 네트워크운용병으로 근무하며 네트워크기기를 다뤄보았습니다. 하지만 다들 기초적인 기능만 다룰줄 알아
+                        <br />
+                        개인적으로 업무 효율을 증진하기 위해 취득하였습니다.
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#certificateModel_2">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="certificateModel_2" tabindex="-1" aria-labelledby="certificateModel_2Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="certificateModel_2Label">자격증</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img
+                                src="assets/img/certificate/InformationEquipmentManagementTechnician.png"
+                                class="modal-img"
+                                alt="정보기기운용기능사 자격증"
+                                style="width: 80%; height: 80%"
+                              />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="table-title" scope="col">ADSP , SQLD</th>
+                    <td>
+                      <div>
+                        [SQLD] : 회사에서 업무를 배정받아 SQL를 실무에서 처음 써보았습니다. 그떄 배운 지식을 바탕으로 자격증을 취득해보았습니다.
+                        <br />
+                        [ADSP] : 데이터 분석 관련된 정보를 얻기위해 취득하였습니다. 깊은 수준은 아니지만 전반적인 지식을 배우는데 아주 좋았습니다.
+                      </div>
+                    </td>
+                    <td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
+                      <div class="star-icon text-center">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-muted" data-bs-toggle="modal" data-bs-target="#certificateModel_3">
+                        <i class="bi bi-file-earmark-slides"></i>
+                      </span>
+                      <!-- Modal 시작 -->
+                      <div class="modal fade" id="certificateModel_3" tabindex="-1" aria-labelledby="certificateModel_3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="certificateModel_3Label">자격증</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <img src="assets/img/certificate/ADSP.png" class="modal-img" alt="ADSP 자격증" style="width: 80%; height: 80%" />
+                              <img src="assets/img/certificate/SQLD.png" class="modal-img" alt="SQLD 자격증" style="width: 80%; height: 80%" />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal 끝 -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- certificate 끝  -->
+      <!-- contact 시작  -->
+      <section class="container pt mt" id="contact">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center mb-5">
+            <h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">Contact</h2>
+          </div>
+        </div>
+      </section>
+      <section class="container backimg">
+        <div class="name-card d-flex justify-content-center">
+          <div class="contact-body shadow">
+            <div class="text-center mb-4">
+              <h1>Kang Gyeong Seok</h1>
+              <small>FrontEnd Developer</small>
+            </div>
+            <div class="d-flex">
+              <div class="ps-3">
+                <ul class="list-unstyled">
+                  <li>
+                    <span>
+                      <i class="bi bi-person-check-fill"></i>
+                      Position : <strong>Developer</strong>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i class="bi bi-envelope"></i>
+                      Email :
+                      <a href="mailto:gyeongseok.kang@gmail.com">
+                        <strong>gyeongseok.kang@gmail.com</strong>
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i class="bi bi-telephone-inbound"></i>
+                      Phone :
+                      <a href="tel:010-6626-1491">
+                        <strong>010-6626-3321</strong>
+                      </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i class="bi bi-house-door"></i>
+                      Blog :
+                      <a href="https://all-dev-kang.tistory.com/">
+                        <strong>Dev & Private blog</strong>
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+                <div class="contact-desc">“같이 일하고싶은 동료가 되겠습니다.”</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th class="table-title" scope="col">0년차</th>
-									<td>
-										<div>
-											모빌리티 서비스 앱 개발
-										</div>
-									</td>
-									<td class="text-center">
-										<div>
-											<img src="https://img.shields.io/badge/Android--grey?logo=android" />
-											<img src="https://img.shields.io/badge/Firebase--grey?logo=firebase" />
-										</div>
-									</td>
-									<td class="text-center">
-										<div>
-											스타트업, 창업
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+        <!-- footer 시작  -->
+        <footer class="container mt-auto mb-5">
+          <div class="social-box text-center">
+            <a class="social-title" href="https://github.com/gyeongseokKang">GitHub</a>
+            <a class="social-title" href="https://all-dev-kang.tistory.com/">Blog</a>
+            <a class="social-title" href="https://www.linkedin.com/in/%EA%B2%BD%EC%84%9D-%EA%B0%95-5190751aa/">LinkedIn</a>
+          </div>
+          <div>
+            <hr />
+          </div>
 
-					</div>
-					<div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
-						가장 최근 순으로 정렬되어 있습니다
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Project 끝 -->
-		<!-- Awards 시작 -->
-		<section class="container pt mt" id="awards">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Awards
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				다양한 사람들과 협업을 통해서 함께 공동의 목표를 성취해 나가는 것에
-				관심이 많습니다. 실패를 겁내지 않고 도전하는 것이 행복합니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table table-hover align-middle">
-							<thead>
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>대회</th>
-									<th>세부 사항</th>
-									<th>수상</th>
-									<th>증빙자료</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title" scope="col">
-										2019<br />
-										청년 스타트업 어워즈 <br />
-										경기도 대학생 융합 창업지원 공모전 <br />
-										흑석캠퍼스타운 창업경진대회 <br />
-										스마트시티즌 챌린지 <br />
-										서울과기대 창업아이디어 경진대회 <br />
-									</th>
-									<td>
-										<div>[카찹] 통합 모빌리티 서비스</div>
-										<div>
-											<span class="badge bg-grey">Android</span>
-											<span class="badge bg-grey">Java</span>
-											<span class="badge bg-grey">Kotlin</span>
-											<span class="badge bg-grey">Firebase</span>
-											<span class="badge bg-grey">Php</span>
-										</div>
-									</td>
-									<td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
-										대상<br />
-										S등급(대상)<br />
-										대상<br />
-										촤우수상<br />
-										은상<br />
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal" data-bs-target="#myAwardModal1">
-											<i class="bi bi-file-earmark-slides"></i>
-										</span>
-										<!-- Modal 시작 -->
-										<div class="modal fade" id="myAwardModal1" tabindex="-1"
-											aria-labelledby="myAwardModal1Label" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="myAwardModal1Label">
-															시상식 증빙 자료
-														</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<img src="assets/img/award/startupAward.jpg" class="modal-img"
-															alt="" style="width: 80%; height: 80%" />
-														<img src="assets/img/award/gyeonggiAward.jpeg" class="modal-img"
-															alt="" style="width: 80%; height: 80%" />
-														<img src="assets/img/award/campusTownAward.jpg"
-															class="modal-img" alt="" style="width: 80%; height: 80%" />
-														<img src="assets/img/award/smartCitizenAward.jpeg"
-															class="modal-img" alt="" style="width: 80%; height: 80%" />
-														<img src="assets/img/award/STU_Award.jpg" class="modal-img"
-															alt="" style="width: 80%; height: 80%" />
-														<p class="modal-desc">
-															프로젝트를 검증받기 위해 다양한 경진대회,
-															공모전에 참가하였고 총 9개의 상을 받았습니다.<br />
-															이후 팀원들과 창업을 하게 되었고, 해당 대회를
-															통해 맺게된 인연을 통해 초기 투자를 받을 수
-															있었습니다.
-														</p>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary"
-															data-bs-dismiss="modal">
-															Close
-														</button>
-														<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 끝 -->
-									</td>
-								</tr>
-
-								<tr>
-									<th class="table-title" scope="col">
-										한국통신학회 추계종합학술발표회
-									</th>
-									<td>
-										<div>
-											[UC-Lab] GAN모델과 DNN모델을 활용한 Anomaly Detection에
-											관한 연구
-										</div>
-										<div>
-											<span class="badge bg-grey">Machine Learning</span>
-											<span class="badge bg-grey">GAN</span>
-											<span class="badge bg-grey">DNN</span>
-											<span class="badge bg-grey">Notebook(ipynb)</span>
-											<span class="badge bg-grey">Python</span>
-										</div>
-									</td>
-									<td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
-										우수논문상
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal" data-bs-target="#myAwardModal2">
-											<i class="bi bi-file-earmark-slides"></i>
-										</span>
-										<!-- Modal 시작 -->
-										<div class="modal fade" id="myAwardModal2" tabindex="-1"
-											aria-labelledby="myAwardModal2Label" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="myAwardModal2Label">
-															시상식 증빙 자료
-														</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<img src="assets/img/award/poster.jpg" class="modal-img" alt=""
-															style="width: 80%; height: 80%" />
-														<p class="modal-desc">
-															시큐레이어(보안솔루션기업)에서 인턴직을 수행하며
-															배웠던 경험을 <br />
-															학부연구생 활동을 통해 학술대회에
-															지원하였습니다. <br />
-															머신러닝(GAN)를 활용한 이상탐지(Anomaly
-															Detection)에 대해 주제로 우수논문상을
-															수상하였습니다.
-														</p>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary"
-															data-bs-dismiss="modal">
-															Close
-														</button>
-														<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 끝 -->
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
-						대회 참여 및 수상 실적은 최근 순으로 정렬되어 있습니다
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Awards 끝-->
-		<!-- Stack 시작-->
-		<section class="container pt mt mb-5" id="stacks">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Stacks
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				T자형 지식을 추구합니다. 다만 지금은 수직, 수평적인 지식을 둘다
-				키워야하는 주니어로써 다양한 기술, 언어를 습득해 할 수 있는 경계선을
-				더 넓혀 나가고자 합니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table table-hover align-middle">
-							<thead>
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>기술 구분</th>
-									<th>로고</th>
-									<th>활용 수준</th>
-									<th>평가</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="col" class="table-title letsp-md">JavaScript</th>
-									<td>
-										<a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8"
-											target="_blank">
-											<img src="/assets/img/stack/js.png" alt="JavaScript Logo" />
-										</a>
-									</td>
-									<td>
-										<span class="ls-0">JavaScript, ECMAScript, Webpack</span>
-										과 Babel등을 위주로 개발하며 모듈을 극대화한 자바스크립트
-										프로그래밍을 추구합니다.<br />
-										최신 문법인 <span class="ls-0">ES6</span>부터 핵심이 되는
-										자바스크립트 코어까지 가장 깊게 공부하고 사용하고 있는
-										언어이기도 합니다.
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="col" class="table-title letsp-md">TypeScript</th>
-									<td>
-										<a href="https://ko.wikipedia.org/wiki/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8"
-											target="_blank">
-											<img src="/assets/img/stack/ts.png" alt="TypeScript Logo" />
-										</a>
-									</td>
-									<td>
-										타입스크립트의 견고한 정적 분석을 통해 개발 유지보수성을
-										향상시키고 사이드이펙트가 없는 프로그램을 만들기 위해
-										도입하고 사용하고 있습니다. 자바스크립트의 슈퍼셋언어로서
-										다양한 기능과 장기적인 편의가 있어 자바스크립트와 함께
-										꾸준히 배워가고 있습니다.
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="col" class="table-title letsp-md">Node.js</th>
-									<td>
-										<a href="https://ko.wikipedia.org/wiki/Node.js" target="_blank">
-											<img src="/assets/img/stack/nodejs.svg" alt="Node.js Logo" />
-										</a>
-									</td>
-									<td>
-										<span class="ls-0">Node.js</span>로
-										<span class="ls-0">Express, Koa</span>등 웹 개발
-										프레임워크를 구축할 수 있으며,
-										<span class="ls-0">React</span>와
-										<span class="ls-0">MERN Stack</span> 방식으로 조합하여
-										개발할 수 있습니다<br />
-										<span class="ls-0">Handlebars, Liquid</span>와 같은
-										<span class="ls-0">Template Engine</span>을
-										<span class="ls-0">View</span> 형태로 제공하여 구축하거나
-										서버 로깅 등을 할 수 있습니다
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="col" class="table-title letsp-md">React</th>
-									<td>
-										<a href="https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%95%A1%ED%8A%B8_(%EC%9B%B9_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC)"
-											target="_blank">
-											<img src="/assets/img/stack/react.svg" alt="React Logo" />
-										</a>
-									</td>
-									<td>
-										기본 레거시에서 React로 이식하는 작업으로 React를 접하고
-										현재에도 계속 사용중입니다. HOC부터 StyledComponent 등을
-										적절히 조합하여 사용할 수 있으며 렌더링 이슈가 중요한
-										대용량 시각화 렌더링 부분을 담당하며 역량을 키워나가고
-										있습니다.
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="col" class="table-title letsp-md">SQL</th>
-									<td>
-										<a href="https://ko.wikipedia.org/wiki/SQL" target="_blank">
-											<img src="/assets/img/stack/sql.png" alt="SQL Logo" />
-										</a>
-									</td>
-									<td>
-										<span class="ls-0">oracle, tibero SQL</span>를 적절하게
-										사용하고 튜닝할 수 있으며, 간단한 쿼리 작업을 능숙하게
-										수행할 수 있습니다. 현재 틈틈히 계속 공부중이며 SQLD를
-										취득했고 SQLP를 위해 공부중입니다. 시각화에 필요한 데이터
-										쿼리를 적절하게 조합할 수 있는 query Generater 모듈을 설계
-										및 구현하였으며 계속 업그레이드 중에 있습니다.
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="col" class="table-title letsp-md">Android</th>
-									<td>
-										<a href="https://koajs.com/" target="_blank">
-											<img src="/assets/img/stack/android.png" alt="Android Logo" />
-										</a>
-									</td>
-									<td>
-										다양한 REST API, 비동기적인 서비스 연동에 경험이 있으며,
-										GoogleMap를 기반으로 하는 어플리케이션을 초기 설계부터
-										실제 서비스까지 전부 담당했습니다. MVVM 패턴으로 설계를
-										진행 할 수 있으며, 그 외 RxJava, Kotlin를 이용한
-										안드로이드 개발도 가능합니다.
-									</td>
-									<td>
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="table-desc fonsiz-xs fonwei-kr-sm letsp-sm text-center color-basic-opac">
-						5개의 별은 부끄럽게도 평생을 공부해도 가질수 있을까 의문입니다만,
-						쟁취해보려고 합니다.
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="charts" class="container">
-			<div class="row">
-				<div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
-					<div class="card mb-3">
-						<div id="chart_frondEnd"></div>
-						<div class="card-body">
-							<div>
-								<h4
-									class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">
-									Front End
-								</h4>
-							</div>
-							<div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
-								<span class="ls-0">JavaScript</span>를 가장 많이 사용해 왔으며
-								가장 자신 있는 언어입니다. 특히
-								<span class="ls-0">React</span>에 관심이 많습니다.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
-					<div class="card mb-3">
-						<div id="chart_backEnd"></div>
-						<div class="card-body">
-							<h4
-								class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">
-								Back end
-							</h4>
-							<div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
-								<span class="ls-0">Node.js</span>를 가장 많이 사용하며
-								<span class="ls-0">Express.js, Koa </span>등의 프레임워크를
-								활용하고 있습니다 <span class="ls-0">Deno</span>를 공부해보고
-								싶습니다.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
-					<div class="card mb-3">
-						<div id="chart_database"></div>
-						<div class="card-body">
-							<h4
-								class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">
-								Data base
-							</h4>
-							<div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
-								<span class="ls-0">MongoDB</span>를 가장 좋아하며
-								<span class="ls-0">Mongoose</span>를 활용하고 있습니다. 물론
-								<span class="ls-0">MySQL</span>도 사용하는 중이며
-								<span class="ls-0">GraphQL</span>에 관심이 많습니다.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-3 d-flex align-items-stretch">
-					<div class="card mb-3">
-						<div id="chart_util"></div>
-						<div class="card-body">
-							<h4
-								class="card-title fonsiz-xl fonwei-en-xxl letsp-xxl text-upper text-center text-primary">
-								Utilities
-							</h4>
-							<div class="card-text fonsiz-sm fonwei-kr-sm letsp-sm mb-3 mt-3 px-2">
-								<span class="ls-0">GraphQL, Asana, Trello, AdobeXd, GitHub, Redmine</span>
-								등 사용하고 있습니다. 더 많이 알수록 효율은 더 높아진다고
-								믿습니다.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Stack 끝-->
-		<!-- certificate 시작-->
-		<section class="container pt mt" id="certificate">
-			<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-				Certificate
-			</h2>
-			<div class="section-desc fonsiz-sm color-basic-opac letsp-sm ws-xs mt-2 mb-4">
-				자격증이 실력의 척도가 될 수는 없습니다. 하지만 관심과 꾸준함에 대한
-				척도는 될 수 있다고 생각합니다.
-			</div>
-			<div class="card shadow">
-				<div class="card-body">
-					<div class="table-responsive">
-						<table class="table table-hover align-middle">
-							<thead>
-								<tr class="fonsiz-sm fonwei-kr-md letsp-sm color-basic-opac text-center vertmid">
-									<th>자격명</th>
-									<th>취득 이유</th>
-									<th>활용도</th>
-									<th>자격증</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="table-title" scope="col">
-										정보처리기사(산업기사)
-									</th>
-									<td>
-										<div>
-											대학교 생활의 마무리의 의미로 취득하였습니다. 개발자에게
-											있어 정보처리기사는 큰 업무적은 이점은 없습니다. <br />
-											하지만 컴퓨터공학 전반을 아우르는 기초적인 지식을 얻을
-											수 있는 시험이었습니다.
-										</div>
-									</td>
-									<td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal"
-											data-bs-target="#certificateModel_1">
-											<i class="bi bi-file-earmark-slides"></i>
-										</span>
-										<!-- Modal 시작 -->
-										<div class="modal fade" id="certificateModel_1" tabindex="-1"
-											aria-labelledby="certificateModel_1Label" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="certificateModel_1Label">
-															자격증
-														</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<img src="assets/img/certificate/InformationProcessingEngineer.png"
-															class="modal-img" alt="정보처리기사 자격증"
-															style="width: 80%; height: 80%" />
-														<img src="assets/img/certificate/InformationProcessingIndustryEngineer.png"
-															class="modal-img" alt="정보처리기사산업기사 자격증"
-															style="width: 80%; height: 80%" />
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary"
-															data-bs-dismiss="modal">
-															Close
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 끝 -->
-									</td>
-								</tr>
-								<tr>
-									<th class="table-title" scope="col">정보기기운용기능사</th>
-									<td>
-										<div>
-											군대에서 네트워크운용병으로 근무하며 네트워크기기를
-											다뤄보았습니다. 하지만 다들 기초적인 기능만 다룰줄 알아
-											<br />
-											개인적으로 업무 효율을 증진하기 위해 취득하였습니다.
-										</div>
-									</td>
-									<td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal"
-											data-bs-target="#certificateModel_2">
-											<i class="bi bi-file-earmark-slides"></i>
-										</span>
-										<!-- Modal 시작 -->
-										<div class="modal fade" id="certificateModel_2" tabindex="-1"
-											aria-labelledby="certificateModel_2Label" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="certificateModel_2Label">
-															자격증
-														</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<img src="assets/img/certificate/InformationEquipmentManagementTechnician.png"
-															class="modal-img" alt="정보기기운용기능사 자격증"
-															style="width: 80%; height: 80%" />
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary"
-															data-bs-dismiss="modal">
-															Close
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 끝 -->
-									</td>
-								</tr>
-								<tr>
-									<th class="table-title" scope="col">ADSP , SQLD</th>
-									<td>
-										<div>
-											[SQLD] : 회사에서 업무를 배정받아 SQL를 실무에서 처음
-											써보았습니다. 그떄 배운 지식을 바탕으로 자격증을
-											취득해보았습니다. <br />
-											[ADSP] : 데이터 분석 관련된 정보를 얻기위해
-											취득하였습니다. 깊은 수준은 아니지만 전반적인 지식을
-											배우는데 아주 좋았습니다.
-										</div>
-									</td>
-									<td class="fonsiz-md letsp-sm fonwei-kr-md text-center color-basic-opac">
-										<div class="star-icon text-center">
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star-fill"></i>
-											<i class="bi bi-star"></i>
-										</div>
-									</td>
-									<td class="text-center">
-										<span class="text-muted" data-bs-toggle="modal"
-											data-bs-target="#certificateModel_3">
-											<i class="bi bi-file-earmark-slides"></i>
-										</span>
-										<!-- Modal 시작 -->
-										<div class="modal fade" id="certificateModel_3" tabindex="-1"
-											aria-labelledby="certificateModel_3Label" aria-hidden="true">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<div class="modal-header">
-														<h5 class="modal-title" id="certificateModel_3Label">
-															자격증
-														</h5>
-														<button type="button" class="btn-close" data-bs-dismiss="modal"
-															aria-label="Close"></button>
-													</div>
-													<div class="modal-body">
-														<img src="assets/img/certificate/ADSP.png" class="modal-img"
-															alt="ADSP 자격증" style="width: 80%; height: 80%" />
-														<img src="assets/img/certificate/SQLD.png" class="modal-img"
-															alt="SQLD 자격증" style="width: 80%; height: 80%" />
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-secondary"
-															data-bs-dismiss="modal">
-															Close
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- Modal 끝 -->
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- certificate 끝  -->
-		<!-- contact 시작  -->
-		<section class="container pt mt" id="contact">
-			<div class="row">
-				<div class="col-lg-7 mx-auto text-center mb-5">
-					<h2 class="section-header fonsiz-xxxl fonwei-en-xxl letsp-sm text-upper color-basic">
-						Contact
-					</h2>
-				</div>
-			</div>
-		</section>
-		<section class="container backimg">
-			<div class="name-card d-flex justify-content-center">
-				<div class="contact-body shadow">
-					<div class="text-center mb-4">
-						<h1>Kang Gyeong Seok</h1>
-						<small>FrontEnd Developer</small>
-					</div>
-					<div class="d-flex">
-						<div class="ps-3">
-							<ul class="list-unstyled">
-								<li>
-									<span>
-										<i class="bi bi-person-check-fill"></i>
-										Position : <strong>Developer</strong>
-									</span>
-								</li>
-								<li>
-									<span>
-										<i class="bi bi-envelope"></i>
-										Email :
-										<a href="mailto:gyeongseok.kang@gmail.com">
-											<strong>gyeongseok.kang@gmail.com</strong>
-										</a>
-									</span>
-								</li>
-								<li>
-									<span>
-										<i class="bi bi-telephone-inbound"></i>
-										Phone :
-										<a href="tel:010-6626-1491">
-											<strong>010-6626-3321</strong>
-										</a>
-									</span>
-								</li>
-								<li>
-									<span>
-										<i class="bi bi-house-door"></i>
-										Blog :
-										<a href="https://all-dev-kang.tistory.com/">
-											<strong>Dev & Private blog</strong>
-										</a>
-									</span>
-								</li>
-							</ul>
-							<div class="contact-desc">
-								“같이 일하고싶은 동료가 되겠습니다.”
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- footer 시작  -->
-			<footer class="container mt-auto mb-5">
-				<div class="social-box text-center">
-					<a class="social-title" href="https://github.com/gyeongseokKang">GitHub</a>
-					<a class="social-title" href="https://all-dev-kang.tistory.com/">Blog</a>
-					<a class="social-title"
-						href="https://www.linkedin.com/in/%EA%B2%BD%EC%84%9D-%EA%B0%95-5190751aa/">LinkedIn</a>
-				</div>
-				<div>
-					<hr />
-				</div>
-
-				<div class="license-copy text-center">
-					ⓒ 2021.
-					<a class="fonwei-en-xxl" href="http://kijepark.com/">Kije’s LAB</a>
-					All Rights Reserved
-					<a class="fonwei-en-xxl"
-						href="http://kijepark.com/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B0%95%EA%B8%B0%EC%A0%9C%EC%9D%98-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.html">Kije’s
-						RESUME</a>
-					.
-					<a class="fonwei-en-xxl" href="#" data-bs-toggle="modal" data-bs-target="#myModal3">Creative Commons
-						License</a>
-				</div>
-				<div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModal3Label" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="myModal3Label">
-									THEME 라이센스 정책
-								</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"
-									aria-label="Close"></button>
-							</div>
-							<div class="modal-body text-center mt-3" mb-5>
-								<img src="assets/svg/license.svg" alt="" />
-								<p class="modal-desc">
-									라이센스는
-									<strong>
-										크리에이티브 커먼즈 라이센스의 저작자표시-비영리(CC
-										BY-NC)</strong>로 저작자와 출처 등을 표시하면 저작물의 변경, 2차적
-									저작물의 작성을 포함하여 자유롭게 이용 하실 수 있습니다.<br />
-									( 단, 영리적 이용은 허용되지 않습니다 ) <br /><br />
-									테마에 적용된 모든 사진 이미지는 저작권 문제로 인해 절대
-									사용 하시면 안됩니다.<br /><br />
-									문의 :
-									<a href="mailto:kijepark@kijeslab.com">
-										<span
-											class="fonsiz-md fonwei-en-xl letsp-md color-purple-opac">kijepark@kijeslab.com</span>
-									</a>
-								</p>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-									Close
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- footer 끝  -->
-		</section>
-		<!-- Contact 끝  -->
-	</main>
-	<!-- Main 끝 -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script src="/js/scripts.js"></script>
-</body>
-
+          <div class="license-copy text-center">
+            ⓒ 2021.
+            <a class="fonwei-en-xxl" href="http://kijepark.com/">Kije’s LAB</a>
+            All Rights Reserved
+            <a
+              class="fonwei-en-xxl"
+              href="http://kijepark.com/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B0%95%EA%B8%B0%EC%A0%9C%EC%9D%98-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.html"
+              >Kije’s RESUME</a
+            >
+            .
+            <a class="fonwei-en-xxl" href="#" data-bs-toggle="modal" data-bs-target="#myModal3">Creative Commons License</a>
+          </div>
+          <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="myModal3Label">THEME 라이센스 정책</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center mt-3" mb-5>
+                  <img src="assets/svg/license.svg" alt="" />
+                  <p class="modal-desc">
+                    라이센스는
+                    <strong> 크리에이티브 커먼즈 라이센스의 저작자표시-비영리(CC BY-NC)</strong>로 저작자와 출처 등을 표시하면 저작물의 변경, 2차적
+                    저작물의 작성을 포함하여 자유롭게 이용 하실 수 있습니다.<br />
+                    ( 단, 영리적 이용은 허용되지 않습니다 ) <br /><br />
+                    테마에 적용된 모든 사진 이미지는 저작권 문제로 인해 절대 사용 하시면 안됩니다.<br /><br />
+                    문의 :
+                    <a href="mailto:kijepark@kijeslab.com">
+                      <span class="fonsiz-md fonwei-en-xl letsp-md color-purple-opac">kijepark@kijeslab.com</span>
+                    </a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer 끝  -->
+      </section>
+      <!-- Contact 끝  -->
+    </main>
+    <!-- Main 끝 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
 </html>
