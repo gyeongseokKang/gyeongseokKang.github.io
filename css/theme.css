@@ -26,12 +26,71 @@ header {
 header .container {
   padding: 6rem 4rem;
 }
+
 header .container h1 {
   letter-spacing: -0.05em;
   font-size: 3.25rem;
   font-weight: 100;
-  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  padding-bottom: 0.5rem;
+}
+
+/* 헤더 타이핑 애니메이션 */
+header .container h1::before,
+header .container h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+header .container h1::before {
+  background: #b2a69d;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+header .container h1::after {
+  width: 0.1em;
+  background: gray;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, steps(var(--typewriterCharacters)) infinite;
+}
+
+header .container h2 {
+  color: hsl(0 0% 0% / 0.7);
+  font-size: 3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* 네비게이션 바 */
