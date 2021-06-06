@@ -53,7 +53,7 @@ header .container h1::after {
 }
 
 header .container h1::before {
-  background: #b2a69d;
+  background: #ede0d1;
   animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
 
