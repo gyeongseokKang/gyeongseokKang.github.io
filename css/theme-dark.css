@@ -3,13 +3,16 @@
     background: rgb(41, 46, 62);
   }
   header {
-    background-image: url(/assets/img/hero-dark.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 
   .header .container h1 {
+    background: #b2a69d;
+  }
+
+  header .container h1::before {
     background: #b2a69d;
   }
 
