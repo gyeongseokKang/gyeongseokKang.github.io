@@ -107,4 +107,11 @@
       loop: true,
     });
   }
+  // click alarm
+  const audio = document.getElementById("switch_alarm");
+  document.addEventListener("click", function clickAlarm(e) {
+    if (e.target.getAttribute("class") && e.target.getAttribute("class").includes("click-alarm")) {
+      audio.play();
+    }
+  });
 })();
