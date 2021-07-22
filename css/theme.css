@@ -104,10 +104,6 @@ body {
   background-color: pink;
 }
 
-/* fade in/out 기능 */
-.fade {
-  position: relative;
-}
 /* 네비게이션 바 */
 .navbar {
   position: sticky;
