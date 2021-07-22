@@ -126,28 +126,32 @@
           if (objectTop < windowBottom - animation_height) {
             $(this).css({
               transition: "opacity 0.1s linear",
-              transition: "margin 0.1s ease-in-out 0s",
+              transition: "left 0.1s linear",
               opacity: 1,
-              "margin-right": "",
+              left: "0px",
             });
           } else {
             $(this).css({
               transition: "opacity 0.5s linear",
               opacity: (windowBottom - objectTop) * ratio,
-              transition: "margin 0.1s ease-in-out 0s",
-              "margin-right": `${100 * (windowBottom - objectTop) * ratio}px`,
+              transition: "left 0.5s linear",
+              left: `${200 * (1 - (windowBottom - objectTop) * ratio)}px`,
             });
           }
         } else {
           $(this).css({
             opacity: 0,
-            "margin-right": "100px",
+            left: "200px",
           });
         }
       });
     }
-    $(".fade").css("opacity", 0);
+    $(".fade").css({
+      opacity: 0,
+      left: "200px",
+    });
     fade();
+
     $(window).scroll(function () {
       fade();
     });
