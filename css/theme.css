@@ -94,7 +94,20 @@ body {
     transform: translateY(0);
   }
 }
+#container {
+  height: 2000px;
+}
 
+#container DIV {
+  margin: 50px;
+  padding: 50px;
+  background-color: pink;
+}
+
+/* fade in/out 기능 */
+.fade {
+  padding-top: 0;
+}
 /* 네비게이션 바 */
 .navbar {
   position: sticky;

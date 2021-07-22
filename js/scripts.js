@@ -114,4 +114,42 @@
       audio.play();
     }
   });
+
+  $(window).on("load", function () {
+    function fade() {
+      let animation_height = $(window).innerHeight() * 0.5;
+      let ratio = Math.round((1 / animation_height) * 10000) / 10000;
+      $(".fade").each(function () {
+        let objectTop = $(this).offset().top;
+        let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+        if (objectTop < windowBottom) {
+          if (objectTop < windowBottom - animation_height) {
+            $(this).css({
+              transition: "opacity 0.1s linear",
+              transition: "margin 0.1s ease-in-out 0s",
+              opacity: 1,
+              "margin-right": "",
+            });
+          } else {
+            $(this).css({
+              transition: "opacity 0.5s linear",
+              opacity: (windowBottom - objectTop) * ratio,
+              transition: "margin 0.1s ease-in-out 0s",
+              "margin-right": `${100 * (windowBottom - objectTop) * ratio}px`,
+            });
+          }
+        } else {
+          $(this).css({
+            opacity: 0,
+            "margin-right": "100px",
+          });
+        }
+      });
+    }
+    $(".fade").css("opacity", 0);
+    fade();
+    $(window).scroll(function () {
+      fade();
+    });
+  });
 })();
