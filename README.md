@@ -1,4 +1,4 @@
-# My PortPolio Site
+# My PortFolio Site
 <p align='center'>
     <img src="https://img.shields.io/badge/Javscript-ES6-yellow?logo=javascript"/>
     <img src="https://img.shields.io/badge/Plotly.js-v1.58.4-blue?logo=plotly">
