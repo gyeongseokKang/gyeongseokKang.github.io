@@ -132,4 +132,32 @@
   targets.forEach((target) => {
     observer.observe(target);
   });
+
+  // dark mode support
+  const userPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const userPrefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  const darkModeSwitch = document.getElementById("darkModeSwitch");
+  darkModeSwitch.disabled = true;
+  darkModeSwitch.checked = userPrefersLight;
+
+  //function that changes the theme, and sets a localStorage variable to track the theme between page loads
+  function switchTheme(e) {
+    if (e.target.checked) {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.setAttribute("data-theme", "dark");
+      darkModeSwitch.checked = true;
+    } else {
+      localStorage.setItem("theme", "light");
+      document.documentElement.setAttribute("data-theme", "light");
+      darkModeSwitch.checked = false;
+    }
+  }
+
+  //listener for changing themes
+  darkModeSwitch.addEventListener("change", switchTheme, false);
+
+  //pre-check the dark-theme checkbox if dark-theme is set
+  if (document.documentElement.getAttribute("data-theme") == "dark") {
+    darkModeSwitch.checked = true;
+  }
 })();
