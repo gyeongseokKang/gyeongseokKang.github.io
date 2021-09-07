@@ -137,19 +137,20 @@
   const userPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   const userPrefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
   const darkModeSwitch = document.getElementById("darkModeSwitch");
-  darkModeSwitch.disabled = true;
+  // darkModeSwitch.disabled = true;
   darkModeSwitch.checked = userPrefersLight;
 
   //function that changes the theme, and sets a localStorage variable to track the theme between page loads
   function switchTheme(e) {
+    console.log(e.target.checked);
     if (e.target.checked) {
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("data-theme", "dark");
-      darkModeSwitch.checked = true;
-    } else {
       localStorage.setItem("theme", "light");
       document.documentElement.setAttribute("data-theme", "light");
       darkModeSwitch.checked = false;
+    } else {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.setAttribute("data-theme", "dark");
+      darkModeSwitch.checked = true;
     }
   }
 
@@ -159,5 +160,13 @@
   //pre-check the dark-theme checkbox if dark-theme is set
   if (document.documentElement.getAttribute("data-theme") == "dark") {
     darkModeSwitch.checked = true;
+  }
+
+  const logoText = document.querySelector(".logo-text p");
+  if (logoText) {
+    logoText.innerHTML = logoText.innerText
+      .split("")
+      .map((char, i) => `<span style="transform:rotate(${i * 9.3}deg)">${char}</span>`)
+      .join("");
   }
 })();
