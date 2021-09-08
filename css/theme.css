@@ -75,13 +75,13 @@ body {
 }
 .fade-class {
   position: relative;
-  left: 200px;
+  bottom: 100px;
   opacity: 0;
-  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s linear;
+  transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s linear;
 }
 .fade-in {
-  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s linear;
-  left: 0px;
+  transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s linear;
+  bottom: 0px;
   opacity: 1;
 }
 @keyframes typewriter {
