@@ -169,4 +169,19 @@
       .map((char, i) => `<span style="transform:rotate(${i * 9.3}deg)">${char}</span>`)
       .join("");
   }
+
+  const wavyText = document.querySelectorAll(".wavy");
+  if (wavyText) {
+    wavyText.forEach((divEl) => {
+      divEl.style = "position: relative; -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));"
+      const wavyTargetText = [...divEl.innerText];
+      const period = (wavyTargetText.length + 1) / 10;
+      divEl.innerText = "";
+      wavyTargetText.forEach((char, index) => {
+        if (char === " ") char = "&nbsp"
+        divEl.innerHTML += `<span style="--i: ${index + 1}; animation: animate ${period}s ease-in-out infinite;animation-delay: calc(0.1s * var(--i));display: inline-block;">${char}</span>`
+      })
+
+    })
+  }
 })();
