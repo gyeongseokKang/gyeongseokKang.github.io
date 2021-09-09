@@ -31,8 +31,9 @@ body {
   letter-spacing: -0.05em;
   font-size: 3.25rem;
   font-weight: 100;
-  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 #ccc, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   font-family: "Source Code Pro", monospace;
@@ -60,7 +61,8 @@ body {
 .typing .container h1::after {
   width: 0.1em;
   background: gray;
-  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, steps(var(--typewriterCharacters)) infinite;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+    steps(var(--typewriterCharacters)) infinite;
 }
 
 .typing .container h2 {
@@ -466,10 +468,10 @@ td .profile {
   color: #3f416567;
 }
 .contact-body img {
-  width: 5.625rem;
-  height: 5.625rem;
-  border-radius: 50%;
-  border: 0.188rem solid greenyellow;
+  border-radius: 0%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
 }
 .contact-body ul {
   padding-left: 0.25rem;
