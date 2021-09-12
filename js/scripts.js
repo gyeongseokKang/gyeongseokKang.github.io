@@ -117,7 +117,7 @@
 
   //스크롤 연동 fade-in fade-out
   const targets = document.querySelectorAll(".fade-class");
-  const options = { root: null, threshold: 0.1, rootMargin: "-0px" };
+  const options = { root: null, threshold: 0.1, rootMargin: "0px" };
   const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
       const container = entry.target;
@@ -173,15 +173,17 @@
   const wavyText = document.querySelectorAll(".wavy");
   if (wavyText) {
     wavyText.forEach((divEl) => {
-      divEl.style = "position: relative; -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));"
+      divEl.style =
+        "position: relative; -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));";
       const wavyTargetText = [...divEl.innerText];
       const period = (wavyTargetText.length + 1) / 10;
       divEl.innerText = "";
       wavyTargetText.forEach((char, index) => {
-        if (char === " ") char = "&nbsp"
-        divEl.innerHTML += `<span style="--i: ${index + 1}; animation: animate ${period}s ease-in-out infinite;animation-delay: calc(0.1s * var(--i));display: inline-block;">${char}</span>`
-      })
-
-    })
+        if (char === " ") char = "&nbsp";
+        divEl.innerHTML += `<span style="--i: ${
+          index + 1
+        }; animation: animate ${period}s ease-in-out infinite;animation-delay: calc(0.1s * var(--i));display: inline-block;">${char}</span>`;
+      });
+    });
   }
 })();
