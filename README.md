@@ -5,17 +5,15 @@
     <img src="https://img.shields.io/badge/Bootstrap-v3.3.2-violet?logo=bootstrap">
 </p>
 
-
-# ToDo
-* I18n Support( English, Korean )
-
 # Done 
 * migration WebComponent ( 2021.09.27 )
 * Dark mode Support
 * version 2 update ( 2021.02.16 )
 * version 1 update
 
-https://gyeongseokkang.github.io/
+# ToDo
+* I18n Support( English, Korean )
+
 ## Version 2 UI
 <div style="display: flex;"> 
   <img src="https://user-images.githubusercontent.com/61446585/108068840-f529bc80-70a5-11eb-88cb-288b3839e10f.png" width="500" height="800">
