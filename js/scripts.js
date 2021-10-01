@@ -135,32 +135,38 @@
 
   // dark mode support
   const userPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const userPrefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
   const darkModeSwitch = document.getElementById("darkModeSwitch");
-  // darkModeSwitch.disabled = true;
-  darkModeSwitch.checked = userPrefersLight;
+  const darkThemeStyleSheet = [...document.styleSheets].find((styleSheet) => {
+    return styleSheet.title === "darkTheme";
+  });
 
+  if (darkThemeStyleSheet) darkThemeStyleSheet.disabled = !userPrefersDark;
+
+  darkModeSwitch.checked = !userPrefersDark;
+  console.log(darkThemeStyleSheet);
   //function that changes the theme, and sets a localStorage variable to track the theme between page loads
   function switchTheme(e) {
     console.log(e.target.checked);
     if (e.target.checked) {
       localStorage.setItem("theme", "light");
       document.documentElement.setAttribute("data-theme", "light");
-      darkModeSwitch.checked = false;
+      darkModeSwitch.checked = true;
+      if (darkThemeStyleSheet) darkThemeStyleSheet.disabled = true;
     } else {
       localStorage.setItem("theme", "dark");
       document.documentElement.setAttribute("data-theme", "dark");
-      darkModeSwitch.checked = true;
+      darkModeSwitch.checked = false;
+      if (darkThemeStyleSheet) darkThemeStyleSheet.disabled = false;
     }
   }
 
   //listener for changing themes
   darkModeSwitch.addEventListener("change", switchTheme, false);
 
-  //pre-check the dark-theme checkbox if dark-theme is set
-  if (document.documentElement.getAttribute("data-theme") == "dark") {
-    darkModeSwitch.checked = true;
-  }
+  // //pre-check the dark-theme checkbox if dark-theme is set
+  // if (document.documentElement.getAttribute("data-theme") == "dark") {
+  //   darkModeSwitch.checked = true;
+  // }
 
   const logoText = document.querySelector(".logo-text p");
   if (logoText) {
