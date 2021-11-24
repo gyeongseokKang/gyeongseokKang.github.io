@@ -1,3 +1,4 @@
+# 21.11.24 부로 더이상 업데이트 안함 -> Vercel 기반으로 사이트 변경
 # Kang's Portfolio
 
 <!-- PROJECT LOGO -->
